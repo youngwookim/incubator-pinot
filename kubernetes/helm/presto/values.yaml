@@ -36,8 +36,8 @@ pinot:
 druid:
   connectorName: druid
   coordinatorUrl: druid-coordinator:8081
-  BrokerUurl: druid-broker:8082
-  SchemaName: default
+  brokerUurl: druid-broker:8082
+  schemaName: default
   computePushdownEnabled: true
 
 coordinator:

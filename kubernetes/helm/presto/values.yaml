@@ -33,6 +33,13 @@ pinot:
   inferDateTypeInSchema: true
   inferTimestampTypeInSchema: true
 
+druid:
+  connectorName: druid
+  coordinatorUrl: druid-coordinator:8081
+  BrokerUurl: druid-broker:8082
+  SchemaName: default
+  computePushdownEnabled: true
+
 coordinator:
   name: coordinator
   port: 8080

@@ -30,6 +30,13 @@ data:
     pinot.use-date-trunc={{ .Values.pinot.useDateTrunc }}
     pinot.infer-date-type-in-schema={{ .Values.pinot.inferDateTypeInSchema }}
     pinot.infer-timestamp-type-in-schema={{ .Values.pinot.inferTimestampTypeInSchema }}
+
+  druid.opoperties: |-
+    connector.name={{ .Values.druid.connectorName }}
+    druid.coordinator-url={{ .Values.druid.coordinatorUrl }}
+    druid.broker-url={{ .Values.druid.brokerUrl }}
+    druid.schema-name={{ .Values.druid.schemaName }}
+    druid.compute-pushdown-enabled={{ .Values.druid.computePushdownEnabled }}
 ---
 apiVersion: v1
 kind: ConfigMap

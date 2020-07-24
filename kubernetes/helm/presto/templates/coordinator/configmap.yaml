@@ -31,7 +31,7 @@ data:
     pinot.infer-date-type-in-schema={{ .Values.pinot.inferDateTypeInSchema }}
     pinot.infer-timestamp-type-in-schema={{ .Values.pinot.inferTimestampTypeInSchema }}
 
-  druid.opoperties: |-
+  druid.properties: |-
     connector.name={{ .Values.druid.connectorName }}
     druid.coordinator-url={{ .Values.druid.coordinatorUrl }}
     druid.broker-url={{ .Values.druid.brokerUrl }}
